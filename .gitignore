@@ -20,6 +20,7 @@ tmp/
 output/
 templates/
 *.zip
+*报名表.pdf
 
 # Private source materials and proofs
 成绩/
