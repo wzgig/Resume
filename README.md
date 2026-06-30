@@ -1,8 +1,8 @@
-# 王子成保研申请学术简历
+# 王子成综合简历
 
 [在线主页](https://wzgig.github.io/Resume/) · [下载 PDF](resume_v2/wang-zicheng-academic-resume.pdf) · [查看 LaTeX 源码](resume_v2/wang-zicheng-academic-resume.tex)
 
-这是王子成的保研申请学术简历仓库，包含中文 LaTeX 简历、Markdown 内容稿、可下载 PDF，以及一个发布在 GitHub Pages 上的轻量学术主页。
+这是王子成的综合简历仓库，包含中文 LaTeX 简历、Markdown 内容稿、可下载 PDF，以及一个发布在 GitHub Pages 上的轻量个人主页。
 
 > [!NOTE]
 > 公开仓库仅保留简历展示与构建所需文件。成绩单、证明材料、营业执照等本地材料已通过 `.gitignore` 排除。
