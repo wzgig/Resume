@@ -1,6 +1,6 @@
 \documentclass[UTF8,a4paper,10pt]{ctexart}
 
-\usepackage[left=1.08cm,right=1.08cm,top=0.82cm,bottom=0.88cm]{geometry}
+\usepackage[left=1.0cm,right=1.0cm,top=0.74cm,bottom=0.84cm]{geometry}
 \usepackage{fontspec}
 \usepackage{xcolor}
 \usepackage{graphicx}
@@ -13,9 +13,10 @@
 \IfFontExistsTF{SimSun}{\setCJKmainfont{SimSun}}{}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
 
-\definecolor{resumeblue}{HTML}{006CB7}
-\definecolor{softline}{HTML}{D5E9F7}
-\definecolor{textgray}{HTML}{555555}
+\definecolor{resumeblue}{HTML}{0A5C7D}
+\definecolor{resumeaccent}{HTML}{B7791F}
+\definecolor{softline}{HTML}{D9E8EE}
+\definecolor{textgray}{HTML}{4B5563}
 
 \hypersetup{colorlinks=true, urlcolor=resumeblue}
 \pagestyle{empty}
@@ -32,11 +33,12 @@
 \newcommand{\sectiontitle}[1]{%
   \vspace{0.48em}
   {\sffamily\bfseries\Large\color{resumeblue}#1}\par
-  \vspace{-0.28em}{\color{resumeblue}\rule{\linewidth}{1.05pt}}\vspace{0.13em}
+  \vspace{-0.28em}{\color{resumeblue}\rule{2.35cm}{1.05pt}}{\color{softline}\rule{\dimexpr\linewidth-2.35cm\relax}{1.05pt}}\vspace{0.13em}
 }
 \newcommand{\field}[2]{\textbf{#1：} & #2}
 \newcommand{\entryhead}[3]{\textbf{#1} \hfill #2 \hfill \textbf{#3}}
 \newcommand{\tightgap}{\vspace{-0.15em}}
+\newcommand{\metriccell}[2]{{\sffamily\bfseries\color{resumeaccent}#1}\par{\fontsize{7.35pt}{9.2pt}\selectfont\color{textgray}#2}}
 
 \begin{document}
 \fontsize{9.05pt}{11.8pt}\selectfont
@@ -48,7 +50,7 @@
   \vspace{0.18em}
   {\color{resumeblue}\rule{\linewidth}{1.15pt}}\par
   \vspace{0.25em}
-  {\sffamily\color{textgray}本科三年级 \quad 电气工程及其自动化 \quad 新能源设备建模与稳定性分析 \quad AI+电力系统}\par
+  {\sffamily\color{textgray}保研申请方向：新能源设备建模与电力系统稳定性分析 \quad AI+电力系统}\par
   \vspace{0.45em}
   \begin{tabularx}{\linewidth}{L{1.75cm}Y L{2.05cm}Y}
     \field{性别}{男} & \field{出生年月}{2005 年 10 月}\\
@@ -66,11 +68,20 @@
   \fcolorbox{softline}{white}{\includegraphics[width=3.0cm,height=3.85cm,keepaspectratio]{photo.jpg}}
 \end{minipage}
 
-\sectiontitle{核心优势}
-\begin{tabularx}{\linewidth}{L{2.35cm}Y}
-\textbf{科研主线} & 聚焦新能源设备频域建模、阻抗/导纳预测与并网稳定性分析，形成第一作者 IEEE 会议论文和 SCI 期刊论文。\\
-\textbf{竞赛能力} & 以队长身份获中国电机工程学会杯全国大学生电工数学建模竞赛国家一等奖、全国大学生统计建模大赛湖南省一等奖等多项国家级/省部级奖励。\\
-\textbf{创业实践} & 长沙智碳联算科技有限责任公司股东，参与电力市场调频软件售卖服务，负责合作关系协调、需求对接与软件开发。\\
+\vspace{0.36em}
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+\metriccell{综合测评前 2\%}{GPA 3.46/4.0} &
+\metriccell{第一作者论文 2 篇}{SCI 三区 + IEEE 会议} &
+\metriccell{国家一等奖}{电工数学建模队长} &
+\metriccell{软著 7 项}{授权 2 项 / 受理 5 项}
+\end{tabularx}
+
+\sectiontitle{保研申请画像}
+\begin{tabularx}{\linewidth}{L{2.25cm}Y}
+\textbf{研究定位} & 面向新能源并网稳定性问题，聚焦 PMSG 频域建模、阻抗/导纳预测、等效电路降阶与电力系统稳定性分析。\\
+\textbf{学术产出} & 已形成第一作者 SCI 三区期刊论文 1 篇、IEEE 会议论文 1 篇；发明专利进入实质审查，软件著作权授权 2 项、受理 5 项。\\
+\textbf{交叉基础} & 具备应用统计学大一数理训练与电气工程专业背景，兼具数学分析、高等代数、机器学习和电力系统仿真基础。\\
+\textbf{综合表现} & 综合测评排名前 2\%，获电工数学建模国家一等奖、全国大学生统计建模大赛湖南省二等奖等建模类奖项。\\
 \end{tabularx}
 
 \sectiontitle{教育背景}
@@ -80,32 +91,6 @@
 2023.09-2024.06 & 长沙理工大学数学与统计学院 & 应用统计学 & 大一修读数学分析、高等代数、解析几何、微观经济学；后转入电气工程及其自动化专业\\
 \end{tabularx}
 
-\sectiontitle{技能水平}
-\begin{tabularx}{\linewidth}{L{2.25cm}Y}
-\textbf{英语水平} & 通过全国大学英语六级考试，具备英文论文写作和国际会议英文口头汇报经历。\\
-\textbf{专业能力} & 掌握新能源设备阻抗/导纳建模、电力系统稳定性分析、构网/跟网控制模型学习与拆解；能够使用 MATLAB 搭建风机及逆变器稳态运行点模型，并开展 Simulink/PSCAD 电磁暂态仿真学习与初步建模。\\
-\textbf{编程建模} & 具备 MATLAB、Python/机器学习、深度学习与电力系统交叉建模经验，正在探索 Agent 与 PSCAD 交互自动生成仿真模型。\\
-\textbf{软件工具} & 熟练使用 VS Code、MATLAB/Simulink、Office、Visio、EndNote、AxMath、TeXstudio、Codex；能够使用 SPSS、PSCAD 等专业分析与仿真软件。\\
-\textbf{写作能力} & 具有 SCI 期刊论文、IEEE 会议论文、专利、软著材料、大创开题/结题报告等科研材料写作经验。\\
-\textbf{其他} & C1 驾驶证；普通话二级乙等。\\
-\end{tabularx}
-
-\sectiontitle{个人荣誉}
-\begin{tabularx}{\linewidth}{L{2.25cm}L{10.95cm}Y}
-\textbf{学科竞赛} & 2025 年 | 中国电机工程学会杯全国大学生电工数学建模竞赛 & 国家一等奖（队长）\\
- & 2026 年 | 全国大学生统计建模大赛 & 湖南省一等奖（队长）\\
- & 2026 年 | 全国大学生能源经济学术创意大赛 & 湖南省二等奖（队长）\\
- & 2025 年 | 全国大学生数学建模竞赛 & 湖南省三等奖（队长）\\
- & 2025 年 | 全国大学生统计建模大赛 & 湖南省三等奖（队长）\\
- & 2025 年 | 正大杯全国大学生市场调查与分析大赛 & 湖南省一等奖（队员）\\
- & 2025 年 | 中国国际大学生创新大赛（原互联网+） & 湖南省三等奖（队长）\\
- & 2026 年 | 金种子杯大学生创业大赛 & 优胜奖（主要成员）\\
- & 2024 年 | 湖南省普通本科高校一校一书一经典、精读、经世阅读推广活动 & 优秀读书报告二等奖（个人）\\[0.12em]
-\textbf{奖学金} & 长沙理工大学学习科技竞赛奖单项奖学金；长沙理工大学优秀学生二等奖学金；长沙理工大学文艺活动优秀奖单项奖学金 & \\
-\textbf{荣誉称号} & 长沙理工大学三好学生；长沙理工大学五四评优优秀团员；长沙理工大学五四评优社会实践先进个人 & \\
-\end{tabularx}
-
-\newpage
 \sectiontitle{学术成果}
 \begin{tabularx}{\linewidth}{L{2.25cm}Y}
 \textbf{发表论文} &
@@ -118,20 +103,44 @@
 \textbf{大创项目} & 基于阻抗参与因子的交直流混联输电系统振荡机理解析与弱阻尼环节定位，已结题。\\
 \end{tabularx}
 
-\sectiontitle{主要经历}
+\sectiontitle{科研经历}
 \entryhead{新能源设备阻抗/导纳建模与智能预测研究}{2025.01-至今}{第一作者论文方向}
 \begin{itemize}
-  \item 围绕 PMSG 在变工况下的频域建模与稳定性分析问题，参与构建运行点采样-频域响应生成-等效电路参数降阶-机器学习预测研究流程，形成 IEEE 会议论文和 SCI 期刊论文。
-  \item 结合降维等效电路、支持向量机等方法，将高维频域特性映射为更具可解释性的电路参数，服务新能源并网稳定性快速建模与分析。
-  \item 独立拆解学习构网/跟网解析模型与 Simulink 电磁暂态仿真模型，使用 MATLAB 搭建风机及逆变器稳态运行点工作模型，持续探索 Agent 与 PSCAD 交互建模。
+  \item 围绕 PMSG 变工况频域建模与稳定性分析，参与构建运行点采样、频域响应生成、等效电路参数降阶和机器学习预测流程，支撑第一作者 SCI/IEEE 论文产出。
+  \item 结合降维等效电路与支持向量机方法，将高维频域特性映射为可解释电路参数，服务新能源并网稳定性快速建模与分析。
+  \item 独立拆解学习构网/跟网解析模型与 Simulink 电磁暂态仿真模型，使用 MATLAB 搭建风机及逆变器稳态运行点模型，持续探索 Agent 与 PSCAD 交互建模。
 \end{itemize}
-\tightgap
 
+\newpage
+\sectiontitle{竞赛荣誉}
+\begin{tabularx}{\linewidth}{L{2.25cm}L{10.95cm}Y}
+\textbf{学科竞赛} & 2025 年 | 中国电机工程学会杯全国大学生电工数学建模竞赛 & 国家一等奖（队长）\\
+ & 2026 年 | 全国大学生统计建模大赛 & 湖南省二等奖（队长）\\
+ & 2026 年 | 全国大学生能源经济学术创意大赛 & 湖南省二等奖（队长）\\
+ & 2025 年 | 全国大学生数学建模竞赛 & 湖南省三等奖（队长）\\
+ & 2025 年 | 正大杯全国大学生市场调查与分析大赛 & 湖南省一等奖（队员）\\
+ & 2025 年 | 中国国际大学生创新大赛（原互联网+） & 湖南省三等奖（队长）\\
+ & 2026 年 | 金种子杯大学生创业大赛 & 优胜奖（主要成员）\\
+ & 2024 年 | 湖南省普通本科高校一校一书一经典、精读、经世阅读推广活动 & 优秀读书报告二等奖（个人）\\[0.12em]
+\textbf{奖学金} & 长沙理工大学学习科技竞赛奖单项奖学金；长沙理工大学优秀学生二等奖学金；长沙理工大学文艺活动优秀奖单项奖学金 & \\
+\textbf{荣誉称号} & 长沙理工大学三好学生；长沙理工大学五四评优优秀团员；长沙理工大学五四评优社会实践先进个人 & \\
+\end{tabularx}
+
+\sectiontitle{技能水平}
+\begin{tabularx}{\linewidth}{L{2.25cm}Y}
+\textbf{英语水平} & 通过全国大学英语六级考试，具备英文论文写作和国际会议英文口头汇报经历。\\
+\textbf{专业能力} & 掌握新能源设备阻抗/导纳建模、电力系统稳定性分析、构网/跟网控制模型学习与拆解；能够使用 MATLAB 搭建风机及逆变器稳态运行点模型，并开展 Simulink/PSCAD 电磁暂态仿真学习与初步建模。\\
+\textbf{编程建模} & 具备 MATLAB、Python/机器学习、深度学习与电力系统交叉建模经验，正在探索 Agent 与 PSCAD 交互自动生成仿真模型。\\
+\textbf{软件工具} & 熟练使用 VS Code、MATLAB/Simulink、Office、Visio、EndNote、AxMath、TeXstudio、Codex；能够使用 SPSS、PSCAD 等专业分析与仿真软件。\\
+\textbf{写作能力} & 具有 SCI 期刊论文、IEEE 会议论文、专利、软著材料、大创开题/结题报告等科研材料写作经验。\\
+\textbf{综合素质} & C1 驾驶证；普通话二级乙等。\\
+\end{tabularx}
+
+\sectiontitle{创新创业与实践}
 \entryhead{长沙智碳联算科技有限责任公司}{2025.12-至今}{股东（持股 50\%）/软件开发}
 \begin{itemize}
-  \item 公司注册资本 10 万元，住所位于长沙理工大学云塘校区工程训练中心 210 室；营业执照登记范围涵盖工程技术研发、软件开发与销售、数据处理和互联网数据服务等。
-  \item 主营电力市场调频软件售卖服务，面向电力市场辅助服务、调频交易与市场出清分析等场景提供软件产品和技术服务。
-  \item 本人负责合作关系协调、需求沟通与软件开发，将业务侧调频服务需求转化为算法模块、软件功能和交付方案。
+  \item 参与面向电力市场辅助服务、调频交易与市场出清分析场景的软件产品设计，负责合作关系协调、需求沟通与软件开发。
+  \item 将业务侧调频服务需求转化为算法模块、软件功能和交付方案，积累电力市场、数据处理与工程软件开发经验。
 \end{itemize}
 \tightgap
 
