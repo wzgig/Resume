@@ -3,22 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>王子成 | 学术简历</title>
-    <meta name="description" content="王子成的学术简历在线预览与 PDF 下载。">
+    <title>王子成 | 保研申请学术主页</title>
+    <meta name="description" content="王子成的保研申请学术主页，展示研究方向、论文成果、竞赛荣誉与学术简历 PDF。">
+    <meta name="theme-color" content="#0a5c7d">
+    <meta property="og:title" content="王子成 | 保研申请学术主页">
+    <meta property="og:description" content="新能源设备建模与电力系统稳定性分析方向，展示研究方向、论文成果、竞赛荣誉与学术简历 PDF。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wzgig.github.io/Resume/">
+    <meta property="og:image" content="https://wzgig.github.io/Resume/photo.jpg">
     <style>
       :root {
         color-scheme: light;
-        --ink: #18212f;
-        --muted: #667085;
-        --line: #d7e2ec;
-        --brand: #006cb7;
-        --brand-dark: #064f86;
+        --ink: #17212b;
+        --muted: #5f6c75;
+        --line: #d7e4e8;
+        --deep: #0a5c7d;
+        --deep-2: #083f59;
+        --accent: #b7791f;
         --paper: #ffffff;
-        --wash: #f4f8fb;
+        --wash: #f3f7f8;
+        --shade: #e9f1f3;
       }
 
       * {
         box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
       }
 
       body {
@@ -26,51 +38,99 @@
         min-height: 100vh;
         color: var(--ink);
         background: var(--wash);
-        font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
-        line-height: 1.6;
+        font-family: "Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", sans-serif;
+        line-height: 1.62;
       }
 
-      .page {
-        width: min(1180px, calc(100% - 32px));
+      a {
+        color: inherit;
+      }
+
+      .wrap {
+        width: min(1140px, calc(100% - 34px));
         margin: 0 auto;
-        padding: 28px 0 40px;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: rgba(243, 247, 248, 0.94);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(14px);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 58px;
+        gap: 18px;
+      }
+
+      .brand {
+        font-weight: 800;
+        color: var(--deep);
+        letter-spacing: 0;
+      }
+
+      .navlinks {
+        display: flex;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .navlinks a {
+        text-decoration: none;
+      }
+
+      .navlinks a:hover {
+        color: var(--deep);
       }
 
       .hero {
         display: grid;
-        grid-template-columns: auto 1fr auto;
-        gap: 22px;
+        grid-template-columns: 1fr auto;
+        gap: 36px;
         align-items: center;
-        padding: 26px 0;
-        border-bottom: 1px solid var(--line);
+        padding: 44px 0 30px;
       }
 
-      .avatar {
-        width: 96px;
-        height: 124px;
-        object-fit: cover;
-        border: 1px solid var(--line);
-        background: var(--paper);
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-weight: 800;
       }
 
       h1 {
-        margin: 0 0 6px;
-        font-size: 46px;
-        line-height: 1.1;
+        margin: 0;
+        font-size: 48px;
+        line-height: 1.08;
         letter-spacing: 0;
       }
 
-      .subtitle {
-        margin: 0;
+      .lead {
+        max-width: 760px;
+        margin: 14px 0 0;
         color: var(--muted);
-        font-size: 16px;
+        font-size: 18px;
+      }
+
+      .portrait {
+        width: 132px;
+        height: 172px;
+        object-fit: cover;
+        border: 1px solid var(--line);
+        background: var(--paper);
+        box-shadow: 0 18px 34px rgba(12, 52, 70, 0.12);
       }
 
       .actions {
         display: flex;
-        gap: 10px;
         flex-wrap: wrap;
-        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 22px;
       }
 
       .button {
@@ -79,36 +139,154 @@
         justify-content: center;
         min-height: 42px;
         padding: 0 15px;
-        border: 1px solid var(--brand);
+        border: 1px solid var(--deep);
         border-radius: 6px;
-        color: var(--brand);
-        background: var(--paper);
+        color: var(--deep);
+        background: transparent;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 800;
       }
 
       .button.primary {
         color: #fff;
-        background: var(--brand);
+        background: var(--deep);
       }
 
       .button:hover {
-        border-color: var(--brand-dark);
-        color: var(--brand-dark);
+        border-color: var(--deep-2);
+        color: var(--deep-2);
       }
 
       .button.primary:hover {
         color: #fff;
-        background: var(--brand-dark);
+        background: var(--deep-2);
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+      }
+
+      .metric {
+        min-height: 104px;
+        padding: 22px 20px;
+        border-right: 1px solid var(--line);
+      }
+
+      .metric:last-child {
+        border-right: 0;
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--accent);
+        font-size: 22px;
+        line-height: 1.2;
+      }
+
+      .metric span {
+        display: block;
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .band {
+        padding: 34px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: 210px 1fr;
+        gap: 24px;
+        align-items: start;
+      }
+
+      h2 {
+        margin: 0;
+        color: var(--deep);
+        font-size: 28px;
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+
+      .section-head > p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-top: 20px;
+      }
+
+      .item {
+        min-height: 132px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+
+      .item h3 {
+        margin: 0 0 8px;
+        color: var(--deep);
+        font-size: 17px;
+        line-height: 1.3;
+      }
+
+      .item p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 110px 1fr 170px;
+        gap: 18px;
+        align-items: start;
+        padding: 14px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .row:first-child {
+        border-top: 0;
+      }
+
+      .year {
+        color: var(--accent);
+        font-weight: 800;
+      }
+
+      .award-title {
+        font-weight: 800;
+      }
+
+      .role {
+        color: var(--muted);
+        text-align: right;
       }
 
       .viewer {
-        margin-top: 24px;
-        background: var(--paper);
+        margin-top: 22px;
         border: 1px solid var(--line);
         border-radius: 8px;
+        background: var(--paper);
         overflow: hidden;
-        box-shadow: 0 18px 45px rgba(16, 44, 76, 0.08);
+        box-shadow: 0 18px 40px rgba(13, 55, 73, 0.08);
       }
 
       .viewer object,
@@ -116,7 +294,7 @@
         display: block;
         width: 100%;
         height: min(78vh, 900px);
-        min-height: 620px;
+        min-height: 640px;
         border: 0;
       }
 
@@ -125,14 +303,59 @@
         color: var(--muted);
       }
 
-      @media (max-width: 760px) {
-        .hero {
-          grid-template-columns: auto 1fr;
+      footer {
+        padding: 28px 0 44px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 860px) {
+        .nav {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 12px 0;
         }
 
-        .actions {
-          grid-column: 1 / -1;
-          justify-content: flex-start;
+        .navlinks {
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          padding-top: 30px;
+        }
+
+        .portrait {
+          width: 112px;
+          height: 146px;
+        }
+
+        h1 {
+          font-size: 36px;
+        }
+
+        .metrics,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .metric {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .metric:last-child {
+          border-bottom: 0;
+        }
+
+        .section-head,
+        .row {
+          grid-template-columns: 1fr;
+        }
+
+        .role {
+          text-align: left;
         }
 
         .viewer object,
@@ -140,34 +363,144 @@
           min-height: 520px;
           height: 72vh;
         }
-
-        h1 {
-          font-size: 32px;
-        }
       }
     </style>
   </head>
   <body>
-    <main class="page">
-      <section class="hero" aria-label="简历标题">
-        <img class="avatar" src="photo.jpg" alt="王子成证件照">
-        <div>
-          <h1>王子成</h1>
-          <p class="subtitle">长沙理工大学 · 电气与信息工程学院 · 学术简历</p>
+    <header class="topbar">
+      <nav class="wrap nav" aria-label="页面导航">
+        <a class="brand" href="#">王子成</a>
+        <div class="navlinks">
+          <a href="#research">研究方向</a>
+          <a href="#publications">学术成果</a>
+          <a href="#awards">竞赛荣誉</a>
+          <a href="#resume">PDF 简历</a>
         </div>
-        <nav class="actions" aria-label="简历操作">
-          <a class="button primary" href="wang-zicheng-academic-resume.pdf">打开 PDF</a>
-          <a class="button" href="wang-zicheng-academic-resume.pdf" download>下载简历</a>
-          <a class="button" href="https://github.com/wzgig/Resume">GitHub</a>
-        </nav>
+      </nav>
+    </header>
+
+    <main>
+      <section class="wrap hero" aria-label="个人简介">
+        <div>
+          <p class="eyebrow">Graduate Recommendation Portfolio</p>
+          <h1>王子成</h1>
+          <p class="lead">长沙理工大学电气与信息工程学院本科生，保研申请方向为新能源设备建模与电力系统稳定性分析。研究兴趣集中在 PMSG 频域建模、阻抗/导纳预测、等效电路降阶与 AI+电力系统。</p>
+          <div class="actions" aria-label="主要操作">
+            <a class="button primary" href="wang-zicheng-academic-resume.pdf">打开 PDF</a>
+            <a class="button" href="wang-zicheng-academic-resume.pdf" download>下载简历</a>
+            <a class="button" href="https://github.com/wzgig/Resume">GitHub 仓库</a>
+          </div>
+        </div>
+        <img class="portrait" src="photo.jpg" alt="王子成证件照">
       </section>
 
-      <section class="viewer" aria-label="PDF 预览">
-        <object data="wang-zicheng-academic-resume.pdf" type="application/pdf">
-          <iframe src="wang-zicheng-academic-resume.pdf" title="王子成学术简历 PDF"></iframe>
-          <p class="fallback">当前浏览器无法内嵌预览 PDF，请使用上方按钮打开或下载简历。</p>
-        </object>
+      <section class="metrics" aria-label="关键指标">
+        <div class="metric"><strong>综合测评前 2%</strong><span>GPA 3.46/4.0</span></div>
+        <div class="metric"><strong>第一作者论文 2 篇</strong><span>SCI 三区 + IEEE 会议</span></div>
+        <div class="metric"><strong>国家一等奖</strong><span>电工数学建模竞赛队长</span></div>
+        <div class="metric"><strong>软著 7 项</strong><span>授权 2 项 / 受理 5 项</span></div>
+      </section>
+
+      <section id="research" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>研究方向</h2>
+            <p>以新能源并网稳定性为主线，将应用统计学的大一数理训练与电气工程专业背景结合起来，形成“频域响应生成 - 等效电路参数降阶 - 机器学习预测 - 稳定性分析”的研究路径。</p>
+          </div>
+          <div class="grid">
+            <article class="item">
+              <h3>PMSG 频域建模</h3>
+              <p>围绕变工况下的阻抗/导纳特性建模，服务新能源设备快速建模与并网稳定性分析。</p>
+            </article>
+            <article class="item">
+              <h3>降阶与可解释建模</h3>
+              <p>通过等效电路参数降阶，将高维频域特性映射为更具解释性的电路参数。</p>
+            </article>
+            <article class="item">
+              <h3>AI+电力系统</h3>
+              <p>探索机器学习、深度学习与 PSCAD/Simulink 仿真模型的交叉建模工作流。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>学术成果</h2>
+            <p>已形成第一作者 SCI 三区期刊论文和 IEEE 会议论文，另有发明专利实质审查、软件著作权授权与受理成果。</p>
+          </div>
+          <div class="grid">
+            <article class="item">
+              <h3>Technologies, 2026</h3>
+              <p><strong>Admittance Prediction for PMSG via Dimensionality-Reduced Equivalent Circuits and Support Vector Machines</strong>，中科院三区，第一作者。</p>
+            </article>
+            <article class="item">
+              <h3>ACPEE 2026</h3>
+              <p><strong>Impedance Prediction of PMSG in Circuit Form Under Variable Operating Points</strong>，IEEE 会议论文，第一作者。</p>
+            </article>
+            <article class="item">
+              <h3>专利与软著</h3>
+              <p>发明专利实质审查；软件著作权已授权 2 项、已受理 5 项，覆盖振荡仿真、故障诊断、调频市场出清等方向。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="awards" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>竞赛荣誉</h2>
+            <p>建模竞赛经历覆盖电工数学建模、统计建模、能源经济、市场调查与创新创业，强调队长经历与跨学科建模能力。</p>
+          </div>
+          <div class="timeline">
+            <div class="row">
+              <div class="year">2025</div>
+              <div class="award-title">中国电机工程学会杯全国大学生电工数学建模竞赛</div>
+              <div class="role">国家一等奖（队长）</div>
+            </div>
+            <div class="row">
+              <div class="year">2026</div>
+              <div class="award-title">全国大学生统计建模大赛</div>
+              <div class="role">湖南省二等奖（队长）</div>
+            </div>
+            <div class="row">
+              <div class="year">2025</div>
+              <div class="award-title">全国大学生统计建模大赛</div>
+              <div class="role">湖南省三等奖（队员）</div>
+            </div>
+            <div class="row">
+              <div class="year">2026</div>
+              <div class="award-title">全国大学生能源经济学术创意大赛</div>
+              <div class="role">湖南省二等奖（队长）</div>
+            </div>
+            <div class="row">
+              <div class="year">2025</div>
+              <div class="award-title">正大杯全国大学生市场调查与分析大赛</div>
+              <div class="role">湖南省一等奖（队员）</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>PDF 简历</h2>
+            <p>以下为最新版保研申请学术简历。无法内嵌预览时，可直接打开或下载 PDF。</p>
+          </div>
+          <div class="viewer" aria-label="PDF 预览">
+            <object data="wang-zicheng-academic-resume.pdf" type="application/pdf">
+              <iframe src="wang-zicheng-academic-resume.pdf" title="王子成保研申请学术简历 PDF"></iframe>
+              <p class="fallback">当前浏览器无法内嵌预览 PDF，请使用页面顶部按钮打开或下载简历。</p>
+            </object>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <div class="wrap">© 2026 王子成 · GitHub Pages powered academic resume</div>
+    </footer>
   </body>
 </html>
