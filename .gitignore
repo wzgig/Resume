@@ -1,0 +1,31 @@
+# TeX build artifacts
+*.aux
+*.bcf
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Local/generated workspaces
+.agents/
+.codex/
+.idea/
+.vscode/
+node_modules/
+tmp/
+output/
+templates/
+*.zip
+
+# Private source materials and proofs
+成绩/
+个人介绍及材料.md
+个人照片.jpg
+营业执照.jpg
+詹皓予-武汉大学-电气与自动化学院-2024届(1).pdf
+resume_v2/business-license.jpg
+resume_v2/王子成-学术简历-美化版.pdf
