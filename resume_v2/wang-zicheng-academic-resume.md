@@ -37,8 +37,8 @@
 
 ## 学术成果
 
-1. 2026.05，Wang Zicheng, et al. **Impedance Prediction of PMSG in Circuit Form Under Variable Operating Points**. ACPEE 2026, IEEE 会议论文，第一作者。
-2. 2026.05，Wang Zicheng, et al. **Admittance Prediction for PMSG via Dimensionality-Reduced Equivalent Circuits and Support Vector Machines**. *Technologies*, 2026, 14(6):323，中科院三区，第一作者。
+1. 2026.04.14，Zicheng Wang, et al. **Impedance Prediction of PMSG in Circuit Form Under Variable Operating Points**. ACPEE 2026, IEEE 会议论文，第一作者。
+2. 2026.05.27，Zicheng Wang, et al. **Admittance Prediction for PMSG via Dimensionality-Reduced Equivalent Circuits and Support Vector Machines**. *Technologies*, 2026, 14(6):323，中科院三区，第一作者。
 3. 2025.08，发明专利：一种新能源系统频域建模与等效电路降阶分析方法，实质审查。
 4. 软件著作权：已授权 2 项（2025.08 基于阻抗参与因子的交直流混联输电系统振荡仿真与分析系统 V1.0；2025.10 常规矩阵变换器的故障诊断系统 V1.0）；已受理 5 项，包括低碳电能与调频联合市场出清系统 V1.0、绿电直连型电氢氨园区优化运行系统 V1.0、新能源设备导纳智能预测与分析软件 V1.0 等。
 5. 大学生创新创业项目：基于阻抗参与因子的交直流混联输电系统振荡机理解析与弱阻尼环节定位，已结题。
@@ -73,7 +73,7 @@
 - 英语水平：CET-6 462 分，具备英文论文写作和国际会议英文口头汇报经历。
 - 专业能力：掌握新能源设备阻抗/导纳建模、电力系统稳定性分析、构网/跟网控制模型学习与拆解；能够使用 MATLAB 搭建风机及逆变器稳态运行点模型，并开展 Simulink/PSCAD 电磁暂态仿真学习与初步建模。
 - 编程建模：具备 MATLAB、Python/机器学习、深度学习与电力系统交叉建模经验，正在探索 Agent 与 PSCAD 交互自动生成仿真模型。
-- 软件工具：熟练使用 VS Code、MATLAB/Simulink、Office、Visio、EndNote、AxMath、TeXstudio、Codex；能够使用 SPSS、PSCAD 等专业分析与仿真软件。
+- 软件工具：熟练使用 VS Code、MATLAB/Simulink、Office、Visio、EndNote、AxMath、TeXstudio、Codex；能够使用 SPSS；使用过 PSCAD 和 PowerFactory。
 - 写作能力：具有 SCI 期刊论文、IEEE 会议论文、专利、软著材料、大创开题/结题报告等科研材料写作经验。
 - 综合素质：C1 驾驶证；普通话二级乙等；兴趣特长包括视频剪辑、户外徒步与骑行。
 
