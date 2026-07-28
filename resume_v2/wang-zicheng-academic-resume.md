@@ -75,7 +75,7 @@
 - 编程建模：具备 MATLAB、Python/机器学习、深度学习与电力系统交叉建模经验，正在探索 Agent 与 PSCAD 交互自动生成仿真模型。
 - 软件工具：熟练使用 VS Code、MATLAB/Simulink、Office、Visio、EndNote、AxMath、TeXstudio、Codex；能够使用 SPSS；使用过 PSCAD 和 PowerFactory。
 - 写作能力：具有 SCI 期刊论文、IEEE 会议论文、专利、软著材料、大创开题/结题报告等科研材料写作经验。
-- 综合素质：C1 驾驶证；普通话二级乙等；兴趣特长包括视频剪辑、户外徒步与骑行。
+- 综合素质：C1 驾驶证；普通话二级乙等；兴趣特长包括视频剪辑、户外徒步、骑行与做饭。
 
 ## 创新创业与实践
 
