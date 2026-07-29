@@ -21,6 +21,7 @@
 - `resume_v2/wang-zicheng-academic-resume.pdf`：编译后的 PDF 简历
 - `resume_v2/wang-zicheng-academic-resume.md`：Markdown 版本简历内容
 - [`wang-zicheng-bilingual-self-introduction.md`](wang-zicheng-bilingual-self-introduction.md)：研究生与学术面试英文自我介绍（中英文对照）
+- [`王子成-论文专利及学科竞赛填报汇总.docx`](王子成-论文专利及学科竞赛填报汇总.docx)：论文、专利及学科竞赛系统填报汇总（含无表格复制版）
 - `docs/index.html`：GitHub Pages 首页
 - `docs/wang-zicheng-academic-resume.pdf`：Pages 使用的 PDF 文件
 - `docs/photo.jpg`：Pages 首页使用的头像
