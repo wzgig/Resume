@@ -13,10 +13,11 @@
 \IfFontExistsTF{SimSun}{\setCJKmainfont{SimSun}}{}
 \IfFontExistsTF{Microsoft YaHei}{\setCJKsansfont{Microsoft YaHei}}{}
 
-\definecolor{resumeblue}{HTML}{0A5C7D}
-\definecolor{resumeaccent}{HTML}{B7791F}
-\definecolor{softline}{HTML}{D9E8EE}
-\definecolor{textgray}{HTML}{4B5563}
+\definecolor{resumeblue}{HTML}{163B52}
+\definecolor{resumeaccent}{HTML}{805A32}
+\definecolor{softline}{HTML}{DCE5EA}
+\definecolor{textgray}{HTML}{536270}
+\definecolor{panelbg}{HTML}{F3F6F8}
 
 \hypersetup{colorlinks=true, urlcolor=resumeblue}
 \pagestyle{empty}
@@ -31,19 +32,20 @@
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
 \newcommand{\sectiontitle}[1]{%
-  \vspace{0.48em}
-  {\sffamily\bfseries\Large\color{resumeblue}#1}\par
-  \vspace{-0.28em}{\color{resumeblue}\rule{2.35cm}{1.05pt}}{\color{softline}\rule{\dimexpr\linewidth-2.35cm\relax}{1.05pt}}\vspace{0.13em}
+  \par\vspace{0.48em}
+  {\sffamily\bfseries\fontsize{12.5pt}{15pt}\selectfont\color{resumeblue}#1}\par\nobreak
+  \vspace{-0.1em}{\color{softline}\rule{\linewidth}{0.55pt}}\par\nobreak\vspace{0.12em}
 }
 \newcommand{\field}[2]{\textbf{#1：} & #2}
-\newcommand{\entryhead}[3]{\textbf{#1} \hfill #2 \hfill \textbf{#3}}
+\newcommand{\entryhead}[3]{{\sffamily\bfseries\color{resumeblue}#1}\hfill {\color{textgray}#2}\quad {\small\color{textgray}#3}\par\nobreak}
 \newcommand{\tightgap}{\vspace{-0.15em}}
-\newcommand{\metriccell}[2]{{\sffamily\bfseries\color{resumeaccent}#1}\par{\fontsize{7.35pt}{9.2pt}\selectfont\color{textgray}#2}}
+\newcommand{\metriccell}[2]{{\sffamily\bfseries\color{resumeaccent}#1}\par{\fontsize{8.1pt}{10.4pt}\selectfont\color{textgray}#2}}
 
 \begin{document}
 \fontsize{9.05pt}{11.8pt}\selectfont
 
 \begin{minipage}[t]{0.76\linewidth}
+  \vspace{0pt}
   {\sffamily\bfseries\fontsize{22pt}{25pt}\selectfont 王子成}
   \hspace{0.75em}
   {\sffamily\bfseries\fontsize{15.5pt}{19pt}\selectfont 长沙理工大学 电气与信息工程学院}\par
@@ -62,30 +64,33 @@
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.19\linewidth}
-  \vspace{0.1em}
+  \vspace{0pt}
   \centering
   \setlength{\fboxsep}{2pt}
   \fcolorbox{softline}{white}{\includegraphics[width=3.0cm,height=3.85cm,keepaspectratio]{photo.jpg}}
 \end{minipage}
 
-\vspace{0.36em}
+\vspace{0.42em}
+{\setlength{\fboxsep}{5pt}\colorbox{panelbg}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
 \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
 \metriccell{综合测评 24/424}{前 5\%} &
 \metriccell{第一作者论文 2 篇}{SCI 三区 + IEEE 会议} &
-\metriccell{国家一等奖}{电工数学建模队长} &
+\metriccell{全国性竞赛 4 项}{省部级竞赛 8 项} &
 \metriccell{软著 4 项}{全部已授权}
 \end{tabularx}
+}}}
+
 
 \sectiontitle{综合能力}
 \begin{tabularx}{\linewidth}{L{2.25cm}Y}
-\textbf{专业方向} & 研究兴趣为高比例新能源电力系统建模、控制与分析，以及 AI 在电力系统中的运用；已有 PMSG 频域建模、阻抗/导纳预测与等效电路降阶研究经历。\\
+\textbf{专业方向} & 研究兴趣为高比例新能源电力系统建模、控制与分析，以及 AI 在电力系统中的运用。\\
 \textbf{成果产出} & 已形成第一作者 SCI 三区期刊论文 1 篇、IEEE 会议论文 1 篇；发明专利进入实质审查，软件著作权已授权 4 项。\\
 \textbf{交叉基础} & 具备应用统计学大一数理训练与电气工程专业背景，兼具数学分析、高等代数、机器学习和电力系统仿真基础。\\
-\textbf{综合表现} & 获电工杯全国大学生电工数学建模竞赛国家一等奖（队长）、金种子杯大学生创业大赛优胜奖（主要成员）、正大杯全国大学生市场调查与分析大赛湖南省一等奖（队员）。\\
+\textbf{综合表现} & 全国性竞赛奖励 4 项、省部级竞赛奖励 8 项；作为长沙智碳联算科技有限责任公司股东（持股 50\%），参与软件开发与业务协调。\\
 \end{tabularx}
 
 \sectiontitle{个人陈述}
-本人申请攻读山东大学硕士研究生，希望在电气工程、新能源并网稳定性与 AI+电力系统方向继续深造。本科阶段，我持续围绕专业基础、科研训练与综合能力提升展开学习，兼具应用统计学数理训练和电气工程专业背景；目前主要关注新能源设备频域建模、电力系统稳定性分析、阻抗/导纳预测及智能算法应用等问题，已以第一作者完成 SCI 三区期刊论文和 IEEE 会议论文各 1 篇。研究生阶段，我希望依托山东大学扎实的学科平台，在导师指导下进一步提升理论分析、科研创新与工程实践能力，将已有科研训练延伸为更系统、更深入的研究工作。
+本人申请攻读山东大学硕士研究生，希望在应用统计学与电气工程交叉基础上，继续研究高比例新能源电力系统建模、控制与分析及 AI 应用，提升理论分析、科研创新与工程验证能力。
 
 \sectiontitle{教育背景}
 \begin{tabularx}{\linewidth}{L{3.0cm} L{5.1cm} L{3.8cm} Y}
@@ -107,16 +112,25 @@
 \end{tabularx}
 
 \sectiontitle{科研经历}
-\entryhead{新能源设备阻抗/导纳建模与智能预测研究}{2025.01-至今}{第一作者论文方向}
+\entryhead{新能源设备阻抗/导纳建模与智能预测研究}{2025.01--2026.04}{第一作者论文方向}
 \begin{itemize}
-  \item 围绕 PMSG 变工况频域建模与稳定性分析，参与构建运行点采样、频域响应生成、等效电路参数降阶和机器学习预测流程，支撑第一作者 SCI/IEEE 论文产出。
-  \item 结合降维等效电路与支持向量机方法，将高维频域特性映射为可解释电路参数，服务新能源并网稳定性快速建模与分析。
-  \item 独立拆解学习构网/跟网解析模型与 Simulink 电磁暂态仿真模型，使用 MATLAB 搭建风机及逆变器稳态运行点模型，持续探索 Agent 与 PSCAD 交互建模。
+  \item 围绕 PMSG 变工况频域建模，参与运行点采样、频域响应生成与模型参数降阶，构建可解释的等效电路表示。
+  \item 结合支持向量机预测不同工况的电路参数，服务并网稳定性快速分析；相关成果形成第一作者期刊论文及 IEEE 会议论文各 1 篇。
+\end{itemize}
+\vspace{0.22em}
+\entryhead{大学生创新创业项目：交直流混联系统振荡分析}{2024.12--2026.04}{已结题}
+\begin{itemize}
+  \item 面向交直流混联输电系统，开展频域数据拟合、等效电路转换与降阶分析，结合阻抗参与因子研究振荡机理及弱阻尼环节定位。
+  \item 产出新能源系统频域建模与等效电路降阶分析发明专利（实质审查）及交直流混联系统振荡仿真与分析软著（已授权）各 1 项。
 \end{itemize}
 
+\newpage
 \sectiontitle{竞赛荣誉}
 \begin{tabularx}{\linewidth}{L{2.25cm}L{10.95cm}Y}
-\textbf{学科竞赛} & 2025.07.25 | 中国电机工程学会杯全国大学生电工数学建模竞赛 & 国家一等奖（队长）\\
+\textbf{学科竞赛} & 2026.08 | 第七届华数杯全国大学生数学建模竞赛 & 国家一等奖（队员）\\
+ & 2025.07.25 | 中国电机工程学会杯全国大学生电工数学建模竞赛 & 国家一等奖（队长）\\
+ & 2026.07.18 | 中国电机工程学会杯全国大学生电工数学建模竞赛 & 国家二等奖（队长）\\
+ & 2026.06 | 第五届全国大学生数据统计与分析竞赛 & 二等奖（队员）\\
  & 2025.05.03 | 美国大学生数学建模竞赛（MCM） & Successful Participant（世界级，队长）\\
  & 2026.06.29 | 全国大学生统计建模大赛 & 湖南省二等奖（队长）\\
  & 2025.08.01 | 全国大学生统计建模大赛 & 湖南省三等奖（队员）\\
@@ -126,8 +140,8 @@
  & 2025.12.05 | 中国国际大学生创新大赛（原互联网+） & 湖南省三等奖（队长）\\
  & 2026.06.03 | 金种子杯大学生创业大赛 & 优胜奖（主要成员）\\
  & 2024.12.15 | 湖南省普通本科高校一校一书一经典、精读、经世阅读推广活动 & 优秀读书报告二等奖（个人）\\[0.12em]
-\textbf{奖学金} & 长沙理工大学学习科技竞赛奖单项奖学金；长沙理工大学优秀学生二等奖学金；长沙理工大学文艺活动优秀奖单项奖学金 & \\
-\textbf{荣誉称号} & 长沙理工大学三好学生；长沙理工大学五四评优优秀团员；长沙理工大学五四评优社会实践先进个人 & \\
+\textbf{奖学金} & 2024--2025 学年：长沙理工大学学习科技竞赛奖单项奖学金；优秀学生二等奖学金；三等奖学业奖学金；文艺活动优秀奖单项奖学金 & \\
+\textbf{荣誉称号} & 2024--2025 学年：长沙理工大学三好学生；“五四评优”优秀团员；“五四评优”社会实践先进个人 & \\
 \end{tabularx}
 
 \sectiontitle{技能水平}
