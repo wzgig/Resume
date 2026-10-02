@@ -7,7 +7,7 @@
   const nav = document.querySelector('#navigation');
   let language = 'en';
   const metadata = {
-    en: {title: 'Zicheng Wang · Power Systems & AI', description: 'Zicheng Wang, an electrical engineering undergraduate at Changsha University of Science and Technology. Research interests: renewable-rich power systems and AI for power systems.'},
+    en: {title: 'Zicheng Wang · Power Systems & AI', description: 'Zicheng Wang, an undergraduate researcher in electrical engineering at Changsha University of Science and Technology. Research interests: renewable-rich power systems, stability analysis, and AI applications in power systems.'},
     zh: {title: '王子成 · 电力系统与人工智能', description: '王子成，长沙理工大学电气工程及其自动化专业本科生。研究兴趣：高比例新能源电力系统建模、控制与分析，以及 AI 在电力系统中的应用。'}
   };
   function updateMenuLabel() {

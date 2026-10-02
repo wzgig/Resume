@@ -38,7 +38,7 @@
 ## 学术成果
 
 1. 2026.04.14，Zicheng Wang, et al. **Impedance Prediction of PMSG in Circuit Form Under Variable Operating Points**. ACPEE 2026, IEEE 会议论文，第一作者。
-2. 2026.05.27，Zicheng Wang, et al. **Admittance Prediction for PMSG via Dimensionality-Reduced Equivalent Circuits and Support Vector Machines**. *Technologies*, 2026, 14(6):323，中科院三区，第一作者。
+2. 2026.05.27，Zicheng Wang, et al. **Admittance Prediction for PMSG via Dimensionality-Reduced Equivalent Circuits and Support Vector Machines**. *Technologies*, 2026, 14(6):323，JCR Q1，IF=5.2，中科院三区，第一作者。
 3. 2025.08，发明专利：一种新能源系统频域建模与等效电路降阶分析方法，实质审查。
 4. 软件著作权：已授权 4 项：2025.08 基于阻抗参与因子的交直流混联输电系统振荡仿真与分析系统 V1.0；2025.10 常规矩阵变换器的故障诊断系统 V1.0；新能源设备导纳智能预测与分析软件 V1.0；嵌入式社区养老服务站资源优化系统 V1.0。
 5. 大学生创新创业项目：基于阻抗参与因子的交直流混联输电系统振荡机理解析与弱阻尼环节定位，已结题。
